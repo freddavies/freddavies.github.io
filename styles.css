@@ -1,0 +1,141 @@
+header, footer, nav, article {
+    display: block;
+}
+
+body {
+    margin: 0 auto;
+    width: 59em;
+    /*font: 13px/22px Helvetica, Arial, sans-serif;*/
+    /*font-family: 'Monda', sans-serif;*/
+    font-family: 'Voces', sans-serif;
+    background: #e2e2e2;
+    -webkit-text-stroke: 0.3px;
+}
+
+article a:link {
+    color: #3baf5c
+}
+
+article a:visited {
+    color: #cba053
+}
+
+article a:hover {
+    color: #41c166
+}
+
+article a:visited:hover {
+    color: #deaf5a
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 100%;
+}
+
+h2 {
+    position: relative;
+    margin-top: 3.5em;
+    font-size: 1.8em;
+    line-height: 60%;
+}
+
+h3 {
+    position: relative;
+    font-size: 1.3em;
+    line-height: 120%;
+    padding-top: 0.5em;
+}
+
+p {
+    font-size: 0.9em;
+    padding-bottom: 0.75em;
+    text-align: justify;
+}
+
+.research h2 {
+    position: relative;
+    margin-top: 0;
+    font-size: 1.8em;
+    line-height: 60%;
+    padding-top: 0;
+}
+
+.research h4 {
+    position: relative;
+    margin-top: 1em;
+    font-size: 1.8em;
+    line-height: 60%;
+    padding-top: 0;
+}
+
+.blogpost header p {
+    font-size: 0.7em;
+    font-style: italic;
+    font-weight: lighter;
+    padding-bottom: 0;
+}
+
+.blogpost h3 {
+    position: relative;
+    font-size: 1.2em;
+    line-height: 100%;
+    padding-top: 0;
+}
+
+td.caption {
+    font-weight: normal;
+    font-size: 0.6em;
+    text-align: center;
+}
+
+.blogpost {
+    margin: 0 auto;
+    width: 49em;
+    background: #fafafa;
+    border-style: ridge;
+    border-width: 4px;
+    border-color: #ec9;
+    border-radius: 6px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+nav {
+    position: absolute;
+    /* left: 0; */
+    width: 59em;
+    background: url("nav_background.png");
+    border-radius: 10px;
+}
+
+nav ul {
+    margin: 0 auto;
+    width: 59em;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    margin-right: 1.2em;
+    width: 10em;
+    font-size: 1em;
+    line-height: 280%;
+    text-align: center;
+    text-decoration: none;
+    color: #cb8;
+}
+
+nav ul li a:hover {
+    color: #eda;
+}
+
+nav ul li.selected a {
+    color: #eda;
+}
+
+

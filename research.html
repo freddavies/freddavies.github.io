@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frederick Davies - MPIA</title>
+    <!--<link href="http://fonts.googleapis.com/css?family=Monda:400,700" rel='stylesheet' type='text/css'>-->
+        <link href="http://fonts.googleapis.com/css?family=Voces" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+</head>
+<body>
+    <header>
+        <h1>Frederick Davies &mdash; MPIA<!--<img border="0" src="construction.gif" alt="Under Construction" width="35" height="35">--></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">About Fred</a></li>
+            <li class="selected"><a href="#">Research</a></li>
+            <li><a href="pubcv.html">Pubs/CV</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <header>
+            <h2>Research Interests</h2>
+        </header>
+        <p>In general, I'm interested in the ionizing (&gt;13.6 eV) radiation field &mdash; the "ionizing background" or "UVB" &mdash; and how it interacts with the intergalactic medium (IGM) and evolves across cosmic time. My main focus is on so-called "semi-numerical" simulations which allow for efficient large-scale simulations of reionization and the ionizing background. I also dabble in analysis of high-resolution hydrodynamical simulations to study the sparse small-scale flux spikes in the Ly&alpha; and Ly&beta; forests at the highest redshifts.
+        </p>
+        <br>
+        <article class="research">
+            <header>
+                <h2>Theory Projects</h2>
+            </header>
+            <h3>Fluctuations in the Ionizing Background</h3>
+            <p>The ionizing background, also known as the ultraviolet background (UVB), is the average intensity of ionizing radiation that any point in the universe receives due to distant sources, namely young stars in star-forming galaxies and accretion disks around supermassive black holes (quasars). The ionizing radiation from these sources is attenuated by cosmic expansion and residual neutral gas in the intergalactic medium, typically H I and He II, so the ionizing background is a composite picture of galaxy formation, quasar activity, and large-scale structure formation. While the current broad view of a mostly-uniform ionizing background has withstood observational tests for two decades, I am studing the effect of realistic non-uniformities in the ionizing background.</p>
+            <h3 align="left" style="padding-top: 0"><small>Helium-Ionizing Background</small>
+                <table class="image" align="right" width="350" height="350">
+                    <tr><td><img border="0" align="right" src="hetaueff.png" width="350" height="350" alt="He II effective optical depth" style="padding-left: 15px;" /></td></tr>
+                    <tr><td class="caption">Helium fluctuations; Davies, Furlanetto, &amp; Dixon (2016)</td></tr>
+                </table>
+               
+            </h3>
+            <p>The helium-ionizing (&gt; 54.4 eV) background in the epoch following He II reionization (z ~ 2&ndash;3) is highly fluctuating due to the relative rarity of the dominant radiation sources (bright quasars) compared to the mean free path of the photons.
+            </p>
+            <p>I have developed a simple 3D numerical model for the evolution of the helium-ionizing background across cosmic time, including light travel time and spatially variable opacity to He II photons (i.e. a spatially variable mean free path). The model naturally reproduces the observed increase in the median optical depth and scatter between sightlines of the He II Ly&alpha; forest from 2.5 &lt; z &lt; 3.5, although there are several tunable parameters (mostly related to quasar properties). I am currently working with Gabor Worseck to apply lightcone outputs from these models to high-resolution hydrodynamical simulations and quantify their agreement (or not!) with HST/COS observations.
+            </p>
+            <p>Collaborators: Steve Furlanetto (UCLA), Keri Dixon (Sussex), Gabor Worseck (MPIA)</p>
+            <br clear="all">
+            <h3 align="right" style="padding-top: 0"><small>Hydrogen-ionizing background</small>
+                <table class="image" align="left" width="420" height="360" style="padding-top: 20px">
+                <tr><td><img border="0" src="denshalouvb_small.png" width="420" height="360" alt="UVB stuff" style="padding-right: 15px;" /></td></tr>
+                <tr><td class="caption">Semi-numerical UVB modeling; Davies &amp; Furlanetto (2016)</td></tr>
+                </table>
+                
+            </h3>
+            <p>While the fluctuations in the helium-ionizing background are due to the rarity of bright quasars, the clustering of star-forming galaxies that produce most of the hydrogen ionizing photons (&gt; 13.6 eV) at z &gt; 4 can result in similar fluctuations relative to the mean background. I am investigating the implications of these fluctuations on the ionizing background at very large scales, and how the background is self-regulated by H I absorption in the IGM/CGM.
+            </p>
+            <p>During my thesis, I developed a model for self-consistent fluctuations in the ionizing background and mean free path of ionizing photons in large semi-numerical simulations, using the DexM code (Mesinger &amp; Furlanetto 2007) to efficiently construct approximate density and halo fields from cosmological initial conditions. My simulations can approximately reproduce the extreme fluctuations in the z &gt; 5.5 Ly&alpha; forest opacity (Davies &amp; Furlanetto 2016 &mdash; <a href="https://arxiv.org/abs/1509.07131">arXiv link</a>), but they require a shorter mean free path of ionizing photons than currently measured (although those measurements may be highly biased, see D'Aloisio et al. 2016).
+            </p>
+
+            <p>Collaborators: Steve Furlanetto (UCLA), Anson D'Aloisio (UW)
+            </p>
+            <br clear="all"> <hr>
+            <h3>Modeling the Epoch of Reionization</h3>
+            <h3 align="left" style="padding-top: 0"><small>Radiative transfer modeling of ionization fronts</small>
+                <table class="image" align="right" width="350" height="350">
+                    <tr><td><img border="0" align="right" src="qsort.png" width="350" height="350" alt="Ionization Structure" style="padding-left: 15px;"/></td></tr>
+                    <tr><td class="caption">Ionization structure; Davies, Furlanetto, &amp; McQuinn (2016)</td></tr>
+                </table>
+            </h3>
+            <p>The relativistically expanding ionized bubbles around quasars can have interesting effects on the IGM during hydrogen and helium reionization due to their detailed ionization and heating structure. These effects include 21 cm absorption/emission features, X-ray heating of the surrounding IGM, the shape of the IGM damping wing, and Lyman-series absorption and emission.
+            </p>
+            <p>I have developed a one-dimensional radiative transfer scheme to investigate these effects at high resolution in the inhomogeneous IGM. The first application of this model was an investigation of Ly&alpha; emission from quasar ionization fronts during reionization (Davies, Furlanetto, &amp; McQuinn (2016) &mdash; <a href="http://arxiv.org/abs/1409.0855">arXiv link</a>), and now I am working on applying it to the proximity zones of z &gt; 6 quasars to compare with new measurements by MPIA PhD student Anna-Christina Eilers (Eilers, Davies, et al., in prep.).
+            </p>
+            <p>Collaborators: Steve Furlanetto (UCLA), Matt McQuinn (UW), Joseph Hennawi (UCSB),<br> Anna-Christina Eilers (MPIA)</p>
+            <br clear="all">
+            <h3 align="right" style="padding-top: 0"><small>Inhomogeneous reionization heating in cosmological simulations</small>
+                <table class="image" align="left" width="360" height="360">
+                    <tr><td><img border="0" align="right" src="zreion.png" width="360" height="360" alt="" style="padding-right: 15px;"/></td></tr>
+                    <tr><td class="caption">Inhomogeneous reionization history in a small box</td></tr>
+                </table>
+            </h3>
+            <p>The heating of baryons in cosmological simulations during the epoch of reionization has historically been modeled by simply switching on a uniform background at some high redshift (typically z &gt; 10) which near-instantly reionizes the entire volume (uniformly) with relatively little heat input. In reality, ionization fronts should leave behind temperatures of ~20,000 K, and the reionization process itself is likely inhomogeneous and extended. Semi-numerical reionization codes such as 21cmFAST (Mesinger et al. 2011) allow for rapid computation of the spatially-inhomogeneous reionization history given a set of cosmological initial conditions and certain assumptions about ionizing sources.
+            </p>
+            <p>I am working with Jose Onorbe to implement such models in high-resolution simulations with the Nyx code (Almgren et al. 2013) to determine the effect of inhomogeneous reionization heating on precision measurements of the Ly&alpha; forest at z &lt; 6.
+            </p>
+            <p>Collaborators: Jose Onorbe (MPIA), Zarija Lukic (LBL)
+            <br clear="all">
+            <h3 align="left" style="padding-top: 0"><small>Improving the mean free path in semi-numerical reionization</small>
+                <table class="image" align="right" width="360" height="360">
+                    <tr><td><img border="0" align="right" src="21cmFRED.png" width="360" height="360" alt="" style="padding-left: 15px;"/></td></tr>
+                    <tr><td class="caption">Modified-21cmFAST ionization map</td></tr>
+                </table>
+            </h3>
+            <p>Semi-numerical reionization simulations use the excursion-set formalism to rapidly compute reionization topology without the need for expensive radiative transfer or hydrodynamical simulations. Under a simple set of assumptions, the current state-of-the-art models (DexM, Mesinger &amp; Furlanetto 2007; 21cmFAST, Mesinger et al. 2011) have only a handful of free parameters: the minimum halo mass for star formation, the efficiency of ionizing photon production, and the maximum distance that ionizing photons can travel. This last parameter is meant to represent the mean free path of ionizing photons, but only in a crude way.
+            </p>
+            <p>I am developing a modified version of the 21cmFAST code that implements an improved prescription for the mean free path which leads to attenuation of photons on all scales.
+            </p>
+            <p>Collaborators: Steve Furlanetto (UCLA)
+            <br clear="all"> <hr>
+            <br>
+            <h4>Data/Observation Projects</h4>
+            <h3 align="left" style="padding-top: 0">Measuring the high-redshift ionizing background<br> from the Ly&alpha; and Ly&beta; flux PDF
+                <table class="image" align="right" width="350" height="355">
+                    <tr><td><img border="0" align="right" src="abcdemo.png" width="350" height="355" alt="" style="padding-left: 15px;"/></td></tr>
+                    <tr><td class="caption">Illustration of Ly&alpha;+Ly&beta; PDFs; Davies et al., in prep.</td></tr>
+                </table>
+            </h3>
+            <p>The state-of-the-art in ionizing background measurements is to measure the mean transmission of the Ly&alpha; forest and tune the (uniform) ionizing background in hydrodynamical simulations to match it. At the highest redshifts we can study with currently known quasars, the Ly&alpha; forest becomes highly opaque, either showing no transmission at all or a handful of narrow flux spikes.
+            </p>
+            <p>I have developed a method to extract precision constraints on the strength of the ionizing background from the distribution of these spikes using Approximate Bayesian Computation (ABC; Pritchard et al. 1999), which allows for so-called "likelihood-free" parameter inference from sparse data. The posterior PDFs of model parameters are generated through rejection sampling an enormous number of mock data sets, fully accounting for non-linearity and covariances.
+            </p>
+            <p>Collaborators: Joseph Hennawi (UCSB), Anna-Christina Eilers (MPIA), Zarija Lukic (LBL)</p>
+            <br clear="all"> <hr>
+            <h3 align="right" style="padding-top: 0">Searching for galaxies in a giant Gunn-Peterson trough
+                <table class="image" align="left" width="460" height="256" style="padding-bottom: 100px; padding-top: 100px">
+                    <tr><td><img border="0" align="right" src="taugal.png" width="460" height="256" alt="" style="padding-right: 15px;"/></td></tr>
+                    <tr><td class="caption">Gunn-Peterson troughs and galaxies; Davies, Becker, &amp; Furlanetto, in prep.</td></tr>
+                </table>
+            </h3>
+            <p>A 110 Mpc/h Gunn-Peterson trough was observed towards the quasar ULAS J0148+0600 by Becker et al. (2015), who found that its existence is highly inconsistent with density fluctuations alone. There are only two other physical properties that could lead to such a trough: more-neutral gas due to a large-scale fluctuation in the ionizing background (Davies &amp; Furlanetto 2016), or colder gas that has cooled since the heating from reionization (D'Aloisio et al. 2015). These two models make opposite predictions for the physical nature of the trough; it is either a giant void, or a giant overdensity. In principle, this can be tested by looking for galaxies that are co-spatial with the Gunn-Peterson trough.
+            </p>
+            <p>Using my simulations of ionizing background and IGM temperature fluctuations, I have made predictions for the number of galaxies in the ULAS J0148+0600 Gunn-Peterson trough, and we received time on Subaru/HSC to observe the field in 2016B (PI: Furlanetto). Unfortunately, two hurricanes came perilously close to Hawai'i during our observing run, precluding acquisition of useful quantities of data. We will continue to request time for this survey, as it could provide an extraordinary breakthrough into the physical state of the post-reioniation IGM.
+            </p>
+            <p>Collaborators: George Becker (UCR), Steve Furlanetto (UCLA)</p>
+            <br clear="all"> <hr>
+            <h3 style="padding-top: 0" align="left">43 GHz VLBA observations of the M87 jet
+                <table class="image" align="right" width="460" height="257">
+                    <tr><td><img border="0" align="left" src="m87_bw098.png" width="460" height="257" alt="43 GHz M87 VLBA Image" style="padding-left: 15px;" /></td></tr>
+                    <tr><td class="caption">43 GHz M87 VLBA image; Walker et al. (2016)</td></tr>
+                </table>
+            </h3>
+            <p>The radio jet of M87 shows complicated structure when observed with millimeter VLBI, providing great insight into the physics of the jet launching and collimation regions close to the several billion solar-mass black hole.
+            </p>
+            <p>Originally started as an NSF REU project in 2008, I am working on measuring astrometry of the point-source core at the base of the M87 jet to look for possible core wandering or proper motion effects across 30+ epochs of 43 GHz VLBA observations over the last 15+ years (PI: R. C. Walker). Our current analysis suggests that we can constrain motions with a precision of ~1 microarcsecond per year, but systematic uncertainties are still a concern.
+            </p>
+            <p>Collaborators: R. Craig Walker (NRAO), Joan Wrobel (NRAO), Bill Junor, Phil Hardee (Alabama), Chun Ly (Arizona)</p>
+            
+            <br clear="all"> <hr>
+            
+        </article>
+    </section>
+</body>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+     ga('create', 'UA-44630103-1', 'ucla.edu');
+     ga('send', 'pageview');
+</script>
+</html>
